@@ -6,11 +6,11 @@ This is a repisitory for site that keeps track of statistics for TwithPlaysPokem
 It uses the TwitchPlaysleaderboard api to calculate the winrates and display current match statistics.
 
 # Dependancies/libraries
-I used the javascript plugin tablesorter to sort the tables.__
-Link: http://tablesorter.com/docs/__
-I also used veekun.com to get the sprites for the Pokemon_
-Link to their Website https://veekun.com/dex/downloads
-For design and look of the website I went with Materialize._
+I used the javascript plugin tablesorter to sort the tables.  <br />
+Link: http://tablesorter.com/docs/  <br />
+I also used veekun.com to get the sprites for the Pokemon  <br />
+Link to their Website https://veekun.com/dex/downloads  <br />
+For design and look of the website I went with Materialize.  <br />
 Link: http://materializecss.com/
 
 # Website
