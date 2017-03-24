@@ -28,7 +28,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="<?php echo URL; ?>css/Stylier.css" rel="stylesheet">
 </head>
-<body onpageshow="Materialize.showStaggeredList('#staggered-test');Materialize.showStaggeredList('#staggered-tezt');">
+<body onpageshow="Materialize.showStaggeredList('#staggered-tezt');">
   <nav class=" green darken-4" role="navigation">
   
     <div class="nav-wrapper container">

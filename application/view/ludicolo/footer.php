@@ -30,7 +30,7 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Made by Michael Jes
+                Made by MJÞ
             </div>
         </div>
     </footer>

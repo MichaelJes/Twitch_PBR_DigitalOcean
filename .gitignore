@@ -2,6 +2,10 @@
 Thumbs.db
 ehthumbs.db
 
+#Other 
+public/img
+public/Match
+public/Js/Tablesorter
 # Folder config file
 Desktop.ini
 
@@ -45,3 +49,4 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.png
