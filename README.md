@@ -2,6 +2,18 @@
 
 # TPP PBR Statistics 
 
-MINI3 is an extremely simple and easy to understand skeleton PHP application, reduced to the max.
-MINI3 is NOT a professional framework and it does not come with all the stuff real frameworks have.
+This is a repisitory for site that keeps track of statistics for TwithPlaysPokemon PBR matches.
+It uses the TwitchPlaysleaderboard api to calculate the winrates and display current match statistics.
 
+# Dependancies/libraries
+I used the javascript plugin tablesorter to sort the tables.
+Link: http://tablesorter.com/docs/
+I also used veekun.com to get the sprites for the Pokemon
+Link to their Website https://veekun.com/dex/downloads
+For design and look of the website I went with Materialize.
+Link: http://materializecss.com/
+
+# Website
+http://178.62.82.212
+
+# Other
