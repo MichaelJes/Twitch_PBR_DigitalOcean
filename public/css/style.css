@@ -1,0 +1,46 @@
+
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+.tablesorter .filtered {
+    display: none;
+}
+
+/* ajax error row */
+.tablesorter .tablesorter-errorRow td {
+    text-align: center;
+    cursor: pointer;
+    background-color: #32CD32;
+}
+th{
+
+}
+.footerBot {
+    position:fixed;bottom:0;
+    width:100%;
+    display:block;
+}
+.footerDynamic{
+}
+@media screen and (min-width: 300px) and (max-width: 799px) {
+    .yenSymbol {
+        display:none;
+
+    }
+}
+@media screen and (max-width: 500px) {
+    span{
+        display:none;
+    }
+}
