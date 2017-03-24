@@ -29,16 +29,10 @@
     <link href="<?php echo URL; ?>css/Stylier.css" rel="stylesheet">
 </head>
 <body onpageshow="Materialize.showStaggeredList('#staggered-tezt');">
-  <nav class=" green darken-4" role="navigation">
+  <nav class=" green darken-2" role="navigation">
   
     <div class="nav-wrapper container">
-          <a id="logo-container" href="<?php echo URL; ?>poke" class="brand-logo">Ghosn</a>
-
-          
-          
-          <ul class="right hide-on-med-and-down ">
-            <li><a href="#"><span><i class="fa fa-jpy yenSymbol"></i></span><?php echo 7 ?></a></li>
-          </ul>
+          <a id="logo-container" href="<?php echo URL; ?>poke" class="brand-logo">TPP statistics</a>
           <ul class="right hide-on-med-and-down ">
             <li><a href="<?php echo URL; ?>match">Current match Statistics</a></li>
           </ul>
