@@ -9,17 +9,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <title>Twitch Pbr</title>
-
     <!-- CSS  -->
 
-    <link href="<?php echo URL; ?>css/materialize.css" rel="stylesheet" media="screen,projection">
-    <link href="<?php echo URL; ?>css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--Table Sorter-->
-    <link type="text/css" href="http://tablesorter.com/docs/css/jq.css" rel="stylesheet">
-    <link type="text/css" href="http://tablesorter.com/themes/blue/style.css" rel="stylesheet">
-    
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -28,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="<?php echo URL; ?>css/Stylier.css" rel="stylesheet">
 </head>
-<body onpageshow="Materialize.showStaggeredList('#staggered-tezt');">
+<body>
   <nav class=" green darken-2" role="navigation">
   
     <div class="nav-wrapper container">

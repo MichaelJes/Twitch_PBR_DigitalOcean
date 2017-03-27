@@ -21,9 +21,6 @@ class PokeController
         //$balance = $Ludi->returnUserBalance('mayonakayuki');
         $Ludi->createArray();
         $Ludi->winsAndLoses();
-        //$Ludi->printData();
-        //$songs = $Song->getAllSongs();
-        //$amount_of_songs = $Song->getAmountOfSongs();
         // load views. within the views we can echo out $songs and $amount_of_songs easily
         require APP . 'view/ludicolo/header.php';
         require APP . 'view/ludicolo/index.php';

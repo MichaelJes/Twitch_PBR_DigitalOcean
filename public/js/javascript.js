@@ -10,6 +10,7 @@ $(document).ready(function()
 window.onload = showRedAndBlue;
 function showRedAndBlue(){
     Materialize.showStaggeredList('#staggered-test');
+    Materialize.showStaggeredList('#staggered-tezt');
 }
 document.getElementById("search").onkeyup = function() {searchTable()};
 function searchTable() {

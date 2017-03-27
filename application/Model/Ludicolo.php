@@ -9,7 +9,7 @@
 namespace Mini\Model;
 use Mini\Core\Model;
 
-class Ludicolo
+class Ludicolo extends Model
 {
 
     public $Pokedex = [];
@@ -28,14 +28,16 @@ class Ludicolo
     }
     function createArray(){
         require APP . 'Data/Pokemon.php';
+
         foreach ($Pokemon as $value) {
-            array_push($this->Pokedex,array("Name" => $value, "Wins" => 0, "Loses" => 0, "WinPrecent" => 0, "Points" => 0, "dexNumber" => ''));}
+            array_push($this->Pokedex,array("Name" => $value, "Wins" => 0, "Loses" => 0, "WinPrecent" => 0, "Points" => 0, "dexNumber" => 0));}
         $this->Pokedex[31]['dexNumber'] = 32;
         $this->Pokedex[28]['dexNumber'] = 29;
         $this->Pokedex[177]['dexNumber'] = 178;
     }
+
     function winsAndLoses(){
-        $total = 12000;
+        $total = 7000;
         for ($x = 1; $x <= $total; $x++) {
             $json_object = json_decode($this->Getdata($x), false);
             if ($json_object->success)
@@ -124,6 +126,15 @@ class Ludicolo
             echo "<tr><td>","<img alt=\"{$value['Name']}\" src=\"{$imageUrl }\"/></td><td>", $value['Name'],"</td>","<td>", $value['Wins'], "</td>","<td>", $value['Loses'], "</td>","<td>",$value['WinPrecent'].'%' , "</td>","<td>",$value['Points'] , "</td><tr>";
         }
         echo '</tbody>','</table>';
+    }
+    public function addSong($name)
+    {
+        $sql = "INSERT INTO Pokemon (pokemonName,wins,Loses,winPrecent,points,dexNumber) VALUES (:pokemonName)";
+        $query = $this->db->prepare($sql);
+        $parameters = array(':pokemonName' => $name);
+        // useful for debugging: you can see the SQL behind above construction by using:
+        // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
+        $query->execute($parameters);
     }
     function returnUserInfo($name)
     {
