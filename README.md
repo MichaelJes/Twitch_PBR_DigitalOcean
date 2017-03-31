@@ -9,7 +9,7 @@ It uses the TwitchPlaysleaderboard api to calculate the winrates and display cur
 I used the javascript plugin tablesorter to sort the tables.  <br />
 Link: http://tablesorter.com/docs/  <br />
 I also used veekun.com to get the sprites for the Pokemon  <br />
-Link to their Website https://veekun.com/dex/downloads  <br />
+Link: https://veekun.com/dex/downloads  <br />
 For design and look of the website I went with Materialize.  <br />
 Link: http://materializecss.com/
 
