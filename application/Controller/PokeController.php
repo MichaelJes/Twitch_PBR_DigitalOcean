@@ -19,8 +19,9 @@ class PokeController
         // Instance new Model (Song)
         // getting all songs and amount of songs
         //$balance = $Ludi->returnUserBalance('mayonakayuki');
-        $Ludi->createArray();
-        $Ludi->winsAndLoses();
+        $pokeDex = $Ludi->getAllItems();
+        //$Ludi->createArray();
+        //$Ludi->winsAndLoses();
         // load views. within the views we can echo out $songs and $amount_of_songs easily
         require APP . 'view/ludicolo/header.php';
         require APP . 'view/ludicolo/index.php';

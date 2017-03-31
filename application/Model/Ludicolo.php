@@ -121,20 +121,34 @@ class Ludicolo extends Model
 
     }
     function TableItems(){
-        foreach ($this->Pokedex as $value) {
-            $imageUrl = 'img/icons/'.$value['dexNumber'].'.png';
-            echo "<tr><td>","<img alt=\"{$value['Name']}\" src=\"{$imageUrl }\"/></td><td>", $value['Name'],"</td>","<td>", $value['Wins'], "</td>","<td>", $value['Loses'], "</td>","<td>",$value['WinPrecent'].'%' , "</td>","<td>",$value['Points'] , "</td><tr>";
+        $pokeDex = $this->getAllItems();
+        foreach ($pokeDex as $value) {
+            //$this->addtoDatabase($value['Name'],$value['Wins'],$value['Loses'],$value['WinPrecent'],$value['Points'],$value['dexNumber']);
+
+            $imageUrl = 'img/icons/'.$value->dexNumber.'.png';
+            echo "<tr><td>","<img alt=\"{$value->pokemonName}\" src=\"{$imageUrl }\"/></td><td>", $value->pokemonName,"</td>","<td>", $value->wins, "</td>","<td>", $value->Loses, "</td>","<td>",$value->winPrecent.'%' , "</td>","<td>",$value->points , "</td><tr>";
         }
         echo '</tbody>','</table>';
     }
-    public function addSong($name)
+    public function addtoDatabase($name,$wins,$loses,$winrate,$points,$dexNumber)
     {
-        $sql = "INSERT INTO Pokemon (pokemonName,wins,Loses,winPrecent,points,dexNumber) VALUES (:pokemonName)";
+        $sql = "INSERT INTO Pokemon (pokemonName,wins,Loses,winPrecent,points,dexNumber) VALUES (:pokemonName,:wins,:Loses,:winPrecent,:points,:dexNumber)";
         $query = $this->db->prepare($sql);
-        $parameters = array(':pokemonName' => $name);
+        $parameters = array(':pokemonName' => $name,':wins' => $wins,':Loses'=>$loses,':winPrecent'=>$winrate,':points'=>$points,':dexNumber'=>$dexNumber);
         // useful for debugging: you can see the SQL behind above construction by using:
         // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
         $query->execute($parameters);
+    }
+    public function getAllItems()
+    {
+        $sql = "SELECT pokemonName,wins,Loses,winPrecent,points,dexNumber FROM Pokemon";
+        $query = $this->db->prepare($sql);
+        $query->execute();
+        // fetchAll() is the PDO method that gets all result rows, here in object-style because we defined this in
+        // core/controller.php! If you prefer to get an associative array as the result, then do
+        // $query->fetchAll(PDO::FETCH_ASSOC); or change core/controller.php's PDO options to
+        // $options = array(PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC ...
+        return $query->fetchAll();
     }
     function returnUserInfo($name)
     {
