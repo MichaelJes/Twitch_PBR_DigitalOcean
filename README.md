@@ -30,3 +30,4 @@ Solved: Making an image for Mystery Pokemon'  <br />
 Solved: Fix the ONload statement in the body to something better  <br />
 Solved: Get a suitable domainName <br />
 # Other
+I am in no way affiliated Twitch plays Pokemon or Nintendo. This is an intependant school project in VEF3A3U.
