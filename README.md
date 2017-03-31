@@ -14,6 +14,18 @@ For design and look of the website I went with Materialize.  <br />
 Link: http://materializecss.com/
 
 # Website
-http://178.62.82.212
-
+http://tppstats.tk/
+# Worklog
+Began working on the project 16.3.2017
+Solved: Added materialize and tabled the data
+Solved: Added sorting and search
+Solved: Fixed the table search
+Solved: Added a header and footer to the project
+Solved: New table and header design
+Solved: Added balance header and put in sprites
+Solved: Fixing Nidoran-F
+Solved: Making the corect calculation for expected odds 
+Solved: Making an image for Mystery Pokemon'
+Solved: Fix the ONload statement in the body to something better
+Solved: Get a suitable domainName
 # Other
