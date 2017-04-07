@@ -99,7 +99,7 @@ class SongsController
             // redirect the user to an error page or similar
 
             // load views. within the views we can echo out $song easily
-            require APP . 'view/_templates/header.php';
+            require APP . 'view/_templates/gal.php';
             require APP . 'view/songs/edit.php';
             require APP . 'view/_templates/footer.php';
         } else {

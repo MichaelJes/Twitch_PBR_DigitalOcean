@@ -1,35 +1,39 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: micha
+ * Date: 3/15/2017
+ * Time: 9:56 AM
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>MINI3</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- JS -->
-    <!-- please note: The JavaScript files are loaded in the footer to speed up page construction -->
-    <!-- See more here: http://stackoverflow.com/q/2105327/1114320 -->
-
-    <!-- CSS -->
-    <link href="<?php echo URL; ?>css/style.css" rel="stylesheet">
-        <!--Import Google Icon Font-->
-
-
-
-
+    <title>Twitch Pbr</title>
+    <!-- CSS  -->
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" href="<?php echo URL; ?>css/materialize.min.css" rel="stylesheet" media="screen,projection">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="<?php echo URL; ?>css/Stylier.css" rel="stylesheet">
 </head>
 <body>
-    <!-- logo, check the CSS file for more info how the logo "image" is shown -->
-    <div class="logo"></div>
+  <nav class=" green darken-2" role="navigation">
+  
+    <div class="nav-wrapper container">
+          <a id="logo-container" href="<?php echo URL; ?>home" class="brand-logo">TPP statistics</a>
+          <ul class="right hide-on-med-and-down ">
+            <li><a href="<?php echo URL; ?>match" class="waves-effect waves-green">Current match Statistics</a></li>
+              <li><a href="<?php echo URL; ?>poke" class="waves-effect waves-green">Pokemon Table</a></li>
+          </ul>
+            <!--This is for mobile-->
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="<?php echo URL; ?>match">Match Stats</a></li>
+              <li><a href="<?php echo URL; ?>poke">Poke Table</a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 
-    <!-- navigation -->
-    <div class="navigation">
-        <a href="<?php echo URL; ?>">home</a>
-        <a href="<?php echo URL; ?>home/exampleone">home/exampleone</a>
-        <a href="<?php echo URL; ?>home/exampletwo">home/exampletwo</a>
-        <a href="<?php echo URL; ?>songs">songs</a>
-        <a href="<?php echo URL; ?>books">books</a>
-        <a href="<?php echo URL; ?>poke">Leaderboard</a>
     </div>
+  </nav>

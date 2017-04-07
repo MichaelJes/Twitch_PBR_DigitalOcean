@@ -1,19 +1,45 @@
 
-    <div class="footer">
-        Find <a href="https://github.com/panique/mini3">MINI3 on GitHub</a>.
-        If you like the project, support it by <a href="http://tracking.rackspace.com/SH1ES">using Rackspace</a> as your hoster [affiliate link].
-    </div>
+</div>
+</div>
+</div>
+<div id="footer">
+    <footer class="page-footer green darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">What is this?</h5>
+                    <p class="grey-text text-lighten-4">This is a site you can use to search through winrates and other match statistics for TwitchplaysPokemons Pbr betting matches</p>
 
-    <!-- jQuery, loaded in the recommended protocol-less way -->
-    <!-- more http://www.paulirish.com/2010/the-protocol-relative-url/ -->
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-    <!-- define the project's URL (to make AJAX calls possible, even when using this in sub-folders etc) -->
-    <script>
-        var url = "<?php echo URL; ?>";
-    </script>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">TwitchPlaysPokemon</h5>
+                    <ul>
+                        <li><a class="white-text" href="https://www.twitch.tv/twitchplayspokemon">Twitch channel</a></li>
 
-    <!-- our JavaScript -->
-    <script src="<?php echo URL; ?>js/application.js"></script>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Resources</h5>
+                    <ul>
+                        <li><a class="white-text" href="http://twitchplaysleaderboard-documentation.readthedocs.io/">Twitch Leaderboards Api</a></li>
+                        <li><a class="white-text" href="https://twitchplayspokemon.tv/">TwitchPlaysPokemon Api</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by MJÞ
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="<?php echo URL; ?>js/materialize.js"></script>
+<script src="<?php echo URL; ?>js/javascript.js"></script>
+<script src="<?php echo URL; ?>js/init.js"></script>
+<script type="text/javascript" src="<?php echo URL; ?>js/Tablesorter/jquery.tablesorter.js"></script>
 </body>
 </html>

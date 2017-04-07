@@ -23,10 +23,10 @@ class PokeController
         //$Ludi->createArray();
         //$Ludi->winsAndLoses();
         // load views. within the views we can echo out $songs and $amount_of_songs easily
-        require APP . 'view/ludicolo/header.php';
+        require APP . 'view/_templates/header.php';
         require APP . 'view/ludicolo/index.php';
         $Ludi->TableItems();
-        require APP . 'view/ludicolo/footer.php';
+        require APP . 'view/_templates/footer.php';
     }
 
 }

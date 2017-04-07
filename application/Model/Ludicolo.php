@@ -28,7 +28,6 @@ class Ludicolo extends Model
     }
     function createArray(){
         require APP . 'Data/Pokemon.php';
-
         foreach ($Pokemon as $value) {
             array_push($this->Pokedex,array("Name" => $value, "Wins" => 0, "Loses" => 0, "WinPrecent" => 0, "Points" => 0, "dexNumber" => 0));}
         $this->Pokedex[31]['dexNumber'] = 32;
@@ -37,7 +36,7 @@ class Ludicolo extends Model
     }
 
     function winsAndLoses(){
-        $total = 7000;
+        $total = 12000;
         for ($x = 1; $x <= $total; $x++) {
             $json_object = json_decode($this->Getdata($x), false);
             if ($json_object->success)
@@ -144,10 +143,6 @@ class Ludicolo extends Model
         $sql = "SELECT pokemonName,wins,Loses,winPrecent,points,dexNumber FROM Pokemon";
         $query = $this->db->prepare($sql);
         $query->execute();
-        // fetchAll() is the PDO method that gets all result rows, here in object-style because we defined this in
-        // core/controller.php! If you prefer to get an associative array as the result, then do
-        // $query->fetchAll(PDO::FETCH_ASSOC); or change core/controller.php's PDO options to
-        // $options = array(PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC ...
         return $query->fetchAll();
     }
     function returnUserInfo($name)

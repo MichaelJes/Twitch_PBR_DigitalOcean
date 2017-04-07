@@ -20,9 +20,9 @@ class MatchController
         $blueCurrent = $milo->showRedPokemon();
         $team = $milo->teamWinPrecentage($current,$blueCurrent);
         //$balance = $ludi->returnUserBalance('MayonakaYuki');
-        require APP . 'view/ludicolo/header.php';
+        require APP . 'view/_templates/header.php';
         require APP . 'view/milotic/index.php';
-        require APP . 'view/ludicolo/footer.php';
+        require APP . 'view/_templates/footer.php';
     }
 
 }

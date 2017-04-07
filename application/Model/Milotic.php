@@ -19,15 +19,12 @@ class Milotic extends Ludicolo
         $response = file_get_contents("http://api.twitchplaysleaderboard.info/match/current");
         // remeber to fix this code when you publish
         return $response;
-
     }
     function showBluePokemon(){
         $bluePoko = [];
         $counter = 0;
         $game = json_decode($this->returnCurrentGame(), false);
-        $this->createArray();
-        $this->winsAndLoses();
-        $pokeDex = $this->returnArray();
+        $pokeDex = $this->getAllItems();
         foreach ($game->blue->team as $value) {
             $poke = $value->name;
             $dex = $value->dexNumber;
@@ -37,8 +34,8 @@ class Milotic extends Ludicolo
             if ($item['dex'] != 0)
             {
                 $number = $item['dex'] -1;
-                $bluePoko[$counter]['winrate'] = $pokeDex[$number]['WinPrecent'];
-                $bluePoko[$counter]['points'] = $pokeDex[$number]['Points'];
+                $bluePoko[$counter]['winrate'] = $pokeDex[$number]->winPrecent;
+                $bluePoko[$counter]['points'] = $pokeDex[$number]->points;
 
             }
             $counter++;
@@ -51,7 +48,7 @@ class Milotic extends Ludicolo
         $redPoko = [];
         $counter = 0;
         $game = json_decode($this->returnCurrentGame(), false);
-        $pokeDex = $this->returnArray();
+        $pokeDex = $this->getAllItems();
         foreach ($game->red->team as $value) {
             $poke = $value->name;
             $dex = $value->dexNumber;
@@ -61,8 +58,8 @@ class Milotic extends Ludicolo
             if ($item['dex'] != 0)
             {
                 $number = $item['dex'] -1;
-                $redPoko[$counter]['winrate'] = $pokeDex[$number]['WinPrecent'];
-                $redPoko[$counter]['points'] = $pokeDex[$number]['Points'];
+                $redPoko[$counter]['winrate'] = $pokeDex[$number]->winPrecent;
+                $redPoko[$counter]['points'] = $pokeDex[$number]->points;
             }
             $counter++;
         }
@@ -88,10 +85,7 @@ class Milotic extends Ludicolo
             $sumBlue = round($sumBlue,2);
             $sumRed = round($sumRed,2);
         }
-
         array_push($teamWin,$sumRed,$sumBlue);
-
-
         return $teamWin;
 
     }

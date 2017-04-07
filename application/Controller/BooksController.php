@@ -21,7 +21,7 @@ class BooksController
         $amount_of_Books = $book->getAmountOfBooks();
 
         // load views. within the views we can echo out $songs and $amount_of_songs easily
-        require APP . 'view/_templates/header.php';
+        require APP . 'view/_templates/gal.php';
         require APP . 'view/books/index.php';
         require APP . 'view/_templates/footer.php';
     }
@@ -51,7 +51,7 @@ class BooksController
             // redirect the user to an error page or similar
 
             // load views. within the views we can echo out $song easily
-            require APP . 'view/_templates/header.php';
+            require APP . 'view/_templates/gal.php';
             require APP . 'view/books/edit.php';
             require APP . 'view/_templates/footer.php';
         } else {
