@@ -72,17 +72,5 @@
             </ul>
         </div>
         </div>
-        <div class="row">
-            <ul id="staggered-test">
-                <li class="" style="transform: translateX(0px); opacity: 0;">
-                    <h4 ><a href="#">List Item</a></h4>
-                    <p>This is a description</p>
-                </li>
-                <li class="" style="transform: translateX(0px); opacity: 0;">
-                    <h4><a href="#">List Item</a></h4>
-                    <p>This is a description</p>
-                </li>
-            </ul>
-        </div>
-    </div>
+
 </div>

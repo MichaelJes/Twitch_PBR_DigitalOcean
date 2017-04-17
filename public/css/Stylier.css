@@ -77,4 +77,13 @@ h4 {
         opacity: 1;
     }
 }
+.slider-adjustment{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background-color:cyan ;
+}
 

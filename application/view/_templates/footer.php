@@ -3,14 +3,12 @@
 </div>
 </div>
 <div id="footer">
-    <footer class="page-footer green darken-2">
+    <footer class="page-footer  indigo darken-3">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">What is this?</h5>
                     <p class="grey-text text-lighten-4">This is a site you can use to search through winrates and other match statistics for TwitchplaysPokemons Pbr betting matches</p>
-
-
                 </div>
                 <div class="col l3 s12">
                     <h5 class="white-text">TwitchPlaysPokemon</h5>

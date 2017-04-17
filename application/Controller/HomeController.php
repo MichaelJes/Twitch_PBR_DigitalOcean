@@ -22,7 +22,7 @@ class HomeController
         // load views
         require APP . 'view/_templates/header.php';
         require APP . 'view/home/index.php';
-        require APP . 'view/_templates/footer.php';
+        require APP . 'view/_templates/footerClear.php';
     }
 
     /**
@@ -33,8 +33,8 @@ class HomeController
     public function exampleOne()
     {
         // load views
-        require APP . 'view/_templates/gal.php';
-        require APP . 'view/home/example_one.php';
+        require APP . 'view/_templates/header.php';
+        require APP . 'view/home/TwitchStream.php';
         require APP . 'view/_templates/footer.php';
     }
 

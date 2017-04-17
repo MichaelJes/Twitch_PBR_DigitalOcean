@@ -26,7 +26,6 @@
                         <th>Loses</th>
                         <th>Win Precentage</th>
                         <th>Points</th>
-
                     </tr>
                     </thead>
                     <tbody>
