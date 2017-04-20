@@ -32,7 +32,8 @@
             <!--This is for mobile-->
           <ul id="nav-mobile" class="side-nav">
             <li><a href="<?php echo URL; ?>match">Match Stats</a></li>
-              <li><a href="<?php echo URL; ?>poke">Poke Table</a></li>
+            <li><a href="<?php echo URL; ?>poke">Poke Table</a></li>
+              <li><a href="<?php echo URL; ?>Twitch">Twitch Stream</a></li>
           </ul>
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 
