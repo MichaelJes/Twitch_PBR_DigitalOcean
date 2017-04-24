@@ -4,9 +4,10 @@
 $(document).ready(function()
     {
         $("#myTable").tablesorter();
+
     }
 );
-
+CKEDITOR.replace( 'editor1' );
 window.onload = showRedAndBlue;
 function showRedAndBlue(){
     Materialize.showStaggeredList('#staggered-test');

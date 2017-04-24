@@ -27,6 +27,7 @@
     </footer>
 </div>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
 <script src="<?php echo URL; ?>js/materialize.js"></script>
 <script src="<?php echo URL; ?>js/javascript.js"></script>
 <script src="<?php echo URL; ?>js/init.js"></script>
