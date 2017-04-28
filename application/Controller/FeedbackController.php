@@ -15,8 +15,15 @@ class FeedbackController
     {
         // load views
         require APP . 'view/_templates/header.php';
-        require APP . 'view/home/example_two.php';
+        require APP . 'view/Feedback/example_two.php';
         require APP . 'view/_templates/footer.php';
+    }
+    public function thanks()
+    {
+        require APP . 'view/_templates/header.php';
+        require APP . 'view/Feedback/feedbackRedirect.php';
+        require APP . 'view/_templates/footer.php';
+
     }
     public function submitFeedback()
     {
@@ -25,11 +32,11 @@ class FeedbackController
             // Instance new Model (Song)
             $feed = new Feedback();
             // do addSong() in model/model.php
-            $Song->addSong($_POST["artist"], $_POST["track"],  $_POST["link"]);
+            $feed->addFeedback($_POST["user"], $_POST["editor1"]);
         }
 
         // where to go after song has been added
-        header('location: ' . URL . 'songs/index');
+        header('location: ' . URL . 'Feedback/thanks');
     }
 
 }

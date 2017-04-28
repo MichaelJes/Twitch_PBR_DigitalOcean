@@ -8,8 +8,20 @@
 
 namespace Mini\Model;
 
+use Mini\Core\Model;
 
-class Feedback
+class Feedback extends Model
 {
+    public function addFeedback($confidant,$message)
+    {
+        $sql = "INSERT INTO Feedback (Confidant, Message) VALUES (:Confi, :Message)";
+        $query = $this->db->prepare($sql);
+        $parameters = array(':Confi' => $confidant, ':Message' => $message);
+
+        // useful for debugging: you can see the SQL behind above construction by using:
+        // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
+
+        $query->execute($parameters);
+    }
 
 }

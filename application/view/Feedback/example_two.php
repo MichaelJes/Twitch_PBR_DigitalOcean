@@ -1,7 +1,7 @@
 <div class="container">
     <div class="section">
     <h3>Feedback</h3>
-        <form action="<?php echo URL; ?>songs/addsong" method="POST">
+        <form action="<?php echo URL; ?>Feedback/submitFeedback" method="POST">
             <div class="row">
                 <div class="input-field col s4">
                     <input id="first_name" type="text" class="validate" name="user" value="" required />

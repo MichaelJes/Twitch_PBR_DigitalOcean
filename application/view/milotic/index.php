@@ -45,7 +45,7 @@
         </div>
           <!--   Red Section   -->
         <div class="col s12 m5">
-            <ul id="staggered-tezt">
+            <ul  id="staggered-tezt">
             <?php
             foreach ($blueCurrent as $value){
                 $imageUrl = 'img/sprite/'.$value['dex'].'.png';

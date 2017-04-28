@@ -16,7 +16,7 @@ class Milotic extends Ludicolo
     function returnCurrentGame()
     {
         $response =null;
-        $response = file_get_contents("http://api.twitchplaysleaderboard.info/match/current");
+            $response = file_get_contents("http://api.twitchplaysleaderboard.info/match/current");
         // remeber to fix this code when you publish
         return $response;
     }

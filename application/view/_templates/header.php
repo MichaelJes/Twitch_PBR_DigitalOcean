@@ -21,7 +21,6 @@
 </head>
 <body>
   <nav class=" indigo darken-3" role="navigation">
-  
     <div class="nav-wrapper container">
           <a id="logo-container" href="<?php echo URL; ?>home" class="brand-logo">TPP statistics</a>
           <ul class="right hide-on-med-and-down ">
