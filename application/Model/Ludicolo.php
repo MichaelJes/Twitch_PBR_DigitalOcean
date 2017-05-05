@@ -36,7 +36,7 @@ class Ludicolo extends Model
     }
 
     function winsAndLoses(){
-        $total = 12000;
+        $total = 12005;
         for ($x = 1; $x <= $total; $x++) {
             $json_object = json_decode($this->Getdata($x), false);
             if ($json_object->success)

@@ -1,7 +1,7 @@
 
 <div class="container">
     <div class="section">
-        <h3>Current playing: Pokemon X</h3>
+        <h4 class="right-aligned">Current playing: Pokemon </h4>
         <div class="row center-align">
             <div class="col s12 m6 l8">
                 <div class="embedVideo">

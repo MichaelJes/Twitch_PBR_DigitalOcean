@@ -15,7 +15,7 @@ class FeedbackController
     {
         // load views
         require APP . 'view/_templates/header.php';
-        require APP . 'view/Feedback/example_two.php';
+        require APP . 'view/Feedback/Feedback_Index.php';
         require APP . 'view/_templates/footer.php';
     }
     public function thanks()
@@ -32,7 +32,7 @@ class FeedbackController
             // Instance new Model (Song)
             $feed = new Feedback();
             // do addSong() in model/model.php
-            $feed->addFeedback($_POST["user"], $_POST["editor1"]);
+            //$feed->addFeedback($_POST["user"], $_POST["editor1"]);
         }
 
         // where to go after song has been added

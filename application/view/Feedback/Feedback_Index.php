@@ -1,6 +1,6 @@
 <div class="container">
     <div class="section">
-    <h3>Feedback</h3>
+    <h3 class="editorz">Feedback</h3>
         <form action="<?php echo URL; ?>Feedback/submitFeedback" method="POST">
             <div class="row">
                 <div class="input-field col s4">

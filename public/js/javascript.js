@@ -13,7 +13,9 @@ function showRedAndBlue(){
     Materialize.showStaggeredList('#staggered-test');
     Materialize.showStaggeredList('#staggered-tezt');
 }
-CKEDITOR.replace( 'editor1' );
+if($('h3').is('.editorz')){
+    CKEDITOR.replace( 'editor1' );
+}
 document.getElementById("search").onkeyup = function() {searchTable()};
 function searchTable() {
     var input, filter, table, tr, td, i;
@@ -48,3 +50,4 @@ function searchTable() {
     }
 
 }
+

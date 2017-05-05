@@ -15,7 +15,7 @@
                     <ul>
                         <li><a class="white-text" href="http://twitchplaysleaderboard-documentation.readthedocs.io/">Twitch Leaderboards Api</a></li>
                         <li><a class="white-text" href="https://twitchplayspokemon.tv/">TwitchPlaysPokemon Api</a></li>
-                        <a class="btn btn-floating btn-small cyan pulse right"><i class="material-icons">edit</i></a>
+                        <a href="<?php echo URL; ?>feedback" class=" right"><i class="material-icons">edit</i>Feedback</a>
                     </ul>
                 </div>
             </div>
@@ -23,7 +23,6 @@
         <div class="footer-copyright">
             <div class="container">
                 Made by MJÞ
-
             </div>
 
         </div>
