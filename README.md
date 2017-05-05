@@ -29,5 +29,9 @@ Solved: Making the corect calculation for expected odds   <br />
 Solved: Making an image for Mystery Pokemon'  <br />
 Solved: Fix the ONload statement in the body to something better  <br />
 Solved: Get a suitable domainName <br />
+Solved: Worked on Making a new HomePage for the website <br />
+Solved: Added a place where the user can view the stream and chat <br />
+Solved: Worked on fixing mobile navigation and maing it more reponsive <br />
+Working on: Making a feedback page where users can leave feedback on the website <br />
 # Other
 I am in no way affiliated Twitch plays Pokemon or Nintendo. This is an intependant school project in VEF3A3U.
