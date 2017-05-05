@@ -37,13 +37,12 @@ Solved: Added a place where the user can view the stream and chat <br />
 Solved: Worked on fixing mobile navigation and maing it more reponsive <br />
 Working on: Making a feedback page where users can leave feedback on the website <br />
 # Athugasemdir
-Feedback hlutin af vefsíðunni ekki alveg búinn.
-Load tímar á "Current Match" er en þá svolitið langir. 
-Feedback takin gæti verið á betri stað.
-Mundi vilja bæti inn auka efni á síður eins og Current Match og Twitch stream því þær er nokkuð auðar immit núna.
-Það hefði verið gaman að geta set upp user kerfi en ég bara sá mjög litla ástæðu fyrir því.
-Í framtíðini mundi ég vilja hafa dynamic front page sem mundi selecta random mynd af safni til að vera aðal myndin.
-Databasið er líka svolítið er "bare bones", ég hefði vilja þróa það aðeins meir
+Feedback hlutin af vefsíðunni ekki alveg búinn og Load tímar á "Current Match" er en þá svolitið langir. <br />
+Feedback takin gæti verið á betri stað. <br />
+Mundi vilja bæti inn auka efni á síður eins og Current Match og Twitch stream því þær er nokkuð auðar immit núna. <br />
+Það hefði verið gaman að geta set upp user kerfi en ég bara sá mjög litla ástæðu fyrir því. <br />
+Í framtíðini mundi ég vilja hafa dynamic front page sem mundi selecta random mynd af safni til að vera aðal myndin. <br />
+Databasið er líka svolítið er "bare bones", ég hefði vilja þróa það aðeins meir. <br />
 
 
 # Other
