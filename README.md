@@ -1,6 +1,6 @@
 ![TPP_PBR](_install/133.png)
 
-# TPP PBR Statistics 
+# TPP PBR Statistics 1.0
 
 This is a repisitory for site that keeps track of statistics for TwithPlaysPokemon PBR matches. <br />
 It uses the TwitchPlaysleaderboard api to calculate the winrates and display current match statistics. <br />
