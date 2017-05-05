@@ -2,8 +2,9 @@
 
 # TPP PBR Statistics 
 
-This is a repisitory for site that keeps track of statistics for TwithPlaysPokemon PBR matches.
-It uses the TwitchPlaysleaderboard api to calculate the winrates and display current match statistics.
+This is a repisitory for site that keeps track of statistics for TwithPlaysPokemon PBR matches. <br />
+It uses the TwitchPlaysleaderboard api to calculate the winrates and display current match statistics. <br />
+You can also watch the stream and interact with people in the chat without having to leave the site. <br />
 
 # Dependancies/libraries
 I used the javascript plugin tablesorter to sort the tables.  <br />
@@ -11,7 +12,9 @@ Link: http://tablesorter.com/docs/  <br />
 I also used veekun.com to get the sprites for the Pokemon  <br />
 Link: https://veekun.com/dex/downloads  <br />
 For design and look of the website I went with Materialize.  <br />
-Link: http://materializecss.com/
+Link: http://materializecss.com/ <br />
+The images I used for the website were from WallpaperLayer <br />
+Link: http://wallpaperlayer.com/simple-pokemon-wallpaper-4337.html <br />
 
 # Website
 http://tppstats.tk/
