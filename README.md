@@ -14,7 +14,7 @@ Link: https://veekun.com/dex/downloads  <br />
 For design and look of the website I went with Materialize.  <br />
 Link: http://materializecss.com/ <br />
 The images I used for the website were from WallpaperLayer <br />
-Link: http://wallpaperlayer.com/simple-pokemon-wallpaper-4337.html <br />
+Link: http://wallpaperlayer.com <br />
 
 # Website
 http://tppstats.tk/
