@@ -22,6 +22,17 @@ class FeedbackController
     {
         require APP . 'view/_templates/header.php';
         require APP . 'view/Feedback/feedbackRedirect.php';
+        require APP . 'view/_templates/footerClear.php';
+
+    }
+    public function overview()
+    {
+
+        $feed = new Feedback();
+        $comments = $feed->getAllFeedback();
+        require APP . 'view/_templates/header.php';
+        echo "<script> passWord() </script>";
+        require APP . 'view/Feedback/Feedbacks.php';
         require APP . 'view/_templates/footer.php';
 
     }
@@ -32,7 +43,7 @@ class FeedbackController
             // Instance new Model (Song)
             $feed = new Feedback();
             // do addSong() in model/model.php
-            //$feed->addFeedback($_POST["user"], $_POST["editor1"]);
+            $feed->addFeedback($_POST["user"],$_POST["feedType"], $_POST["editor1"]);
         }
 
         // where to go after song has been added

@@ -14,7 +14,6 @@ class PokeController
 {
     public function index()
     {
-
         $Ludi = new Ludicolo();
         // Instance new Model (Song)
         // getting all songs and amount of songs

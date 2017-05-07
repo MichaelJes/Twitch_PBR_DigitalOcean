@@ -6017,6 +6017,7 @@ textarea.materialize-textarea + label:after {
   margin-top: 1rem;
 }
 
+
 .input-field.inline {
   display: inline-block;
   vertical-align: middle;

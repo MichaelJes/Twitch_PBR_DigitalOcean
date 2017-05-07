@@ -133,4 +133,7 @@ button
 {
     margin-top: 25px;
 }
+.radioInline {
+    display: inline;
+}
 
