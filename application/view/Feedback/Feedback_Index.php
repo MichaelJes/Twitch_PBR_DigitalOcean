@@ -1,14 +1,3 @@
-<style>
-    .radioInline {
-        display: inline;
-        margin-left: 15px;
-
-    }
-    .topo{
-        padding-top: 5px;
-    }
-
-</style>
 
 <div class="container">
     <div class="section">

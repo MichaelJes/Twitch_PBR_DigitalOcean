@@ -12,7 +12,7 @@ use Mini\Model\Ludicolo;
 
 class Milotic extends Ludicolo
 {
-
+    //nær í leikin sem er að vera spilla núna
     function returnCurrentGame()
     {
         $response =null;
@@ -20,6 +20,7 @@ class Milotic extends Ludicolo
         // remeber to fix this code when you publish
         return $response;
     }
+    //reiknir út bláu liðið
     function showBluePokemon(){
         $bluePoko = [];
         $counter = 0;
@@ -44,6 +45,7 @@ class Milotic extends Ludicolo
 
 
     }
+    //decodar rauða liðið
     function showRedPokemon(){
         $redPoko = [];
         $counter = 0;
@@ -67,6 +69,7 @@ class Milotic extends Ludicolo
 
 
     }
+    // reiknar út sénsin að hvert lið vinni based á data frá databasinu
     function teamWinPrecentage($blue,$red){
         $teamWin = [];
         //red

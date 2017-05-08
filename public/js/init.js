@@ -4,6 +4,7 @@
     $('.button-collapse').sideNav();
     $('.carousel.carousel-slider').carousel({fullWidth: true});
 
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 $(document).ready(function()
@@ -11,3 +12,6 @@ $(document).ready(function()
         $('.slider').slider();
     }
 );
+
+
+

@@ -30,7 +30,7 @@
                             <p><?php echo $comment->Message ?></p>
                         </div>
                         <div class="card-action right-align">
-                            <a href="#">Mark resolved</a>
+                            <a href="<?php echo URL . 'feedback/deleteFeedback/' . htmlspecialchars($comment->id, ENT_QUOTES, 'UTF-8'); ?>">Mark resolved</a>
                         </div>
                     </div>
                 </div>

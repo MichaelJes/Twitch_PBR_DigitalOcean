@@ -13,6 +13,7 @@ class Ludicolo extends Model
 {
 
     public $Pokedex = [];
+    //nær í upplýsingar um leikina sem hafa verið spillað
     function Getdata($x){
         $forceDownload=false;
         $response =null;
@@ -26,6 +27,7 @@ class Ludicolo extends Model
         }
         return $response;
     }
+    //býr til array till að geyma þessar upplýsingar
     function createArray(){
         require APP . 'Data/Pokemon.php';
         foreach ($Pokemon as $value) {
@@ -34,7 +36,7 @@ class Ludicolo extends Model
         $this->Pokedex[28]['dexNumber'] = 29;
         $this->Pokedex[177]['dexNumber'] = 178;
     }
-
+    // reiknar winrate hjá hverjum pokemon sem var að kepa í leikinum
     function winsAndLoses(){
         $total = 12005;
         for ($x = 1; $x <= $total; $x++) {
@@ -89,12 +91,14 @@ class Ludicolo extends Model
         }
         $this->calculate();
     }
+    // Þetta function er fyrir testing
     function printData(){
         print_r($this->Pokedex);
     }
     function returnArray(){
         return $this->Pokedex;
     }
+    //reiknar út
     function calculate(){
         $z = 0;
         foreach ($this->Pokedex as $value) {
@@ -119,6 +123,7 @@ class Ludicolo extends Model
         }
 
     }
+    // settir hlutina í table til að sýna notendum
     function TableItems(){
         $pokeDex = $this->getAllItems();
         foreach ($pokeDex as $value) {
@@ -129,6 +134,7 @@ class Ludicolo extends Model
         }
         echo '</tbody>','</table>';
     }
+    //bættir við nýjum leik við databasið
     public function addtoDatabase($name,$wins,$loses,$winrate,$points,$dexNumber)
     {
         $sql = "INSERT INTO Pokemon (pokemonName,wins,Loses,winPrecent,points,dexNumber) VALUES (:pokemonName,:wins,:Loses,:winPrecent,:points,:dexNumber)";
@@ -138,6 +144,7 @@ class Ludicolo extends Model
         // echo '[ PDO DEBUG ]: ' . Helper::debugPDO($sql, $parameters);  exit();
         $query->execute($parameters);
     }
+    //nær í allar upplýsingar
     public function getAllItems()
     {
         $sql = "SELECT pokemonName,wins,Loses,winPrecent,points,dexNumber FROM Pokemon";
@@ -145,6 +152,7 @@ class Ludicolo extends Model
         $query->execute();
         return $query->fetchAll();
     }
+    //nær í upplýsingar um notanda account á Twitch
     function returnUserInfo($name)
     {
         $response =null;
@@ -154,6 +162,7 @@ class Ludicolo extends Model
         // remeber to fix this code when you publish
         return $response;
     }
+    // gamall kóði sem var notaður til ná í upplýsingar um hvað mikinn pening notandin átti
     function returnUserBalance($name){
 
         $json_object = json_decode($this->returnUserInfo($name), false);
