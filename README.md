@@ -14,7 +14,7 @@ Link: https://veekun.com/dex/downloads  <br />
 For design and look of the website I went with Materialize.  <br />
 Link: http://materializecss.com/ <br />
 The images I used for the website were from WallpaperLayer <br />
-Link: http://wallpaperlayer.com/simple-pokemon-wallpaper-4337.html <br />
+Link: http://wallpaperlayer.com <br />
 
 # Website
 http://tppstats.tk/
@@ -35,7 +35,8 @@ Solved: Get a suitable domainName <br />
 Solved: Worked on Making a new HomePage for the website <br />
 Solved: Added a place where the user can view the stream and chat <br />
 Solved: Worked on fixing mobile navigation and maing it more reponsive <br />
-Working on: Making a feedback page where users can leave feedback on the website <br />
+Solved: Making a feedback page where users can leave feedback on the website <br />
+Working on: Minor tweaks and fixes.
 # Athugasemdir
 Feedback hlutin af vefsíðunni ekki alveg búinn og Load tímar á "Current Match" er en þá svolitið langir. <br />
 Feedback takin gæti verið á betri stað. <br />
@@ -47,3 +48,4 @@ Databasið er líka svolítið er "bare bones", ég hefði vilja þróa það a�
 
 # Other
 I am in no way affiliated Twitch plays Pokemon or Nintendo. This is an intependant school project in VEF3A3U.
+All images and other content are owned by Nintendo of America. Theses assets are purely being used for academic purposes and in no way will be used for commercial purposes. 
